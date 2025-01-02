@@ -19,8 +19,8 @@ const Hero = () => {
               입니다
             </h1>
             <p className="text-gray-600 mb-8 max-w-lg">
-              사용자 경험을 중요시하며, 깔끔하고 효율적인 코드를 작성하는 것을
-              좋아합니다.
+              새로운 기술을 배우는 것을 즐기며, 깔끔한 코드 작성을 위해 노력하는
+              개발자입니다.
             </p>
             <div className="space-x-4">
               <a

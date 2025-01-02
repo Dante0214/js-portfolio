@@ -3,7 +3,8 @@ const About = () => {
     {
       title: "팀 프로젝트",
       count: "3+",
-      desc: "프론트엔드 개발,머신러닝 프로젝트",
+      desc: "프론트엔드 개발",
+      desc2: "머신러닝 프로젝트",
     },
     {
       title: "개인 프로젝트",
@@ -30,10 +31,9 @@ const About = () => {
                 가지고 있습니다.
               </p>
               <p className="text-gray-600">
-                React와 같은 현대적인 프론트엔드 기술을 활용한 웹 개발 경험이
-                있으며, Python과 TensorFlow를 활용한 AI 프로젝트도
-                진행해보았습니다. 특히 AI 기술을 웹 서비스에 접목시키는 방향에
-                큰 관심을 가지고 있습니다.
+                React를 활용한 웹 개발 경험이 있으며, AI 프로젝트도 진행한
+                경험이 있습니다. 특히 AI 기술을 웹 서비스에 접목하는 것에 큰
+                관심이 있습니다.
               </p>
 
               <div className="flex flex-col space-y-4">
@@ -61,6 +61,9 @@ const About = () => {
                     </p>
                     <p className="text-gray-600 font-medium">{item.title}</p>
                     <p className="text-sm text-gray-500">{item.desc}</p>
+                    {item.desc2 && (
+                      <p className="text-sm text-gray-500">{item.desc2}</p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -71,16 +74,18 @@ const About = () => {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">전자공학 전공</span>
-                    <span className="text-sm text-gray-500">2023</span>
+                    <span className="text-gray-600">
+                      선문대학교 전자공학과 졸업
+                    </span>
+                    <span className="text-sm text-gray-500">2022</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">AI 부트캠프 수료</span>
+                    <span className="text-gray-600">SKT FLYAI 수료</span>
                     <span className="text-sm text-gray-500">2023</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">ADsP</span>
-                    <span className="text-sm text-gray-500">2023</span>
+                    <span className="text-sm text-gray-500">2022</span>
                   </div>
                 </div>
               </div>
