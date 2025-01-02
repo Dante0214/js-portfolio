@@ -25,7 +25,7 @@ const Projects = () => {
       tech: ["React", "MUI", "React-Query", "React-router"],
       image: project3Img,
       github: "https://github.com/Dante0214/react-js-netflix",
-      demo: "https://react-js-netflix-a217kpndk-dante0214s-projects.vercel.app/",
+      demo: "https://react-js-netflix.vercel.app/",
     },
 
     // 더 많은 프로젝트 추가
@@ -72,6 +72,7 @@ const Projects = () => {
                 <div className="flex gap-4">
                   <a
                     href={project.github}
+                    target="\_blank"
                     className="flex-1 text-center py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
                   >
                     Github
@@ -79,6 +80,7 @@ const Projects = () => {
                   {project.demo && (
                     <a
                       href={project.demo}
+                      target="\_blank"
                       className="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                     >
                       Live Demo
