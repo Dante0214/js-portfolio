@@ -54,7 +54,12 @@ const About = () => {
                 {highlights.map((item) => (
                   <div
                     key={item.title}
-                    className="p-6 bg-gray-50 rounded-xl hover:shadow-md transition-shadow"
+                    onClick={() =>
+                      document
+                        .getElementById("projects")
+                        .scrollIntoView({ behavior: "smooth" })
+                    }
+                    className="p-6 bg-gray-50 rounded-xl hover:shadow-md transition-shadow cursor-pointer"
                   >
                     <p className="text-4xl font-bold text-blue-600">
                       {item.count}
@@ -90,7 +95,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-xl">
+              {/* <div className="bg-blue-50 p-6 rounded-xl">
                 <h3 className="font-bold text-lg mb-4 text-blue-700">
                   현재 진행 중인 학습
                 </h3>
@@ -104,7 +109,7 @@ const About = () => {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

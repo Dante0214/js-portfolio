@@ -7,7 +7,6 @@ const Skills = () => {
         { name: "JavaScript", level: 70 },
         { name: "React", level: 70 },
         { name: "MUI", level: 55 },
-        { name: "Tailwind", level: 55 },
         { name: "Python", level: 60 },
       ],
     },
@@ -18,6 +17,14 @@ const Skills = () => {
         { name: "Git", level: 65 },
         { name: "VS Code", level: 70 },
         { name: "Jupyter Notebook", level: 60 },
+      ],
+    },
+    {
+      title: "Current Learning",
+      skills: [
+        { name: "Tailwind" },
+        { name: "Next.js" },
+        { name: "Typescript" },
       ],
     },
   ];
@@ -38,15 +45,23 @@ const Skills = () => {
                 {category.skills.map((skill) => (
                   <div key={skill.name}>
                     <div className="flex justify-between mb-1">
-                      <span className="text-gray-600">{skill.name}</span>
-                      <span className="text-blue-600">{skill.level}%</span>
+                      {skill.level ? (
+                        <>
+                          <span className="text-gray-600">{skill.name}</span>
+                          <span className="text-blue-600">{skill.level}%</span>
+                        </>
+                      ) : (
+                        <span className="text-blue-600">{skill.name}</span>
+                      )}
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div
-                        className="bg-blue-600 h-2 rounded-full"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    {skill.level && (
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div
+                          className="bg-blue-600 h-2 rounded-full"
+                          style={{ width: `${skill.level}%` }}
+                        ></div>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
