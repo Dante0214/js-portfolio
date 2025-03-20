@@ -1,6 +1,7 @@
 import project1Img from "../assets/images/projects/image.png";
 import project2Img from "../assets/images/projects/pro2img.png";
 import project3Img from "../assets/images/projects/pro3.png";
+import project4Img from "../assets/images/projects/pro4.png";
 const Projects = () => {
   const projects = [
     {
@@ -19,6 +20,15 @@ const Projects = () => {
       image: project2Img,
       github: "https://github.com/SK-flyai/NateNews",
     },
+    {
+      title: "사용자 링크 공유 플랫폼",
+      description:
+        "React와 Flask를 활용한 사용자 인증 (로그인/회원가입), 웹 링크 CRUD (생성, 조회, 수정, 삭제),링크 검색 및 카테고리 필터링,링크 공유 및 권한 관리 (읽기/쓰기)",
+      tech: ["React", "Flask", "MUI", "React-router", "Axios", "SQLite"],
+      image: project4Img,
+      github: "https://github.com/Dante0214/aurora",
+    },
+
     {
       title: "영화 검색 웹사이트",
       description: "React와 MUI, TMDB를 활용한 반응형 웹 애플리케이션",
